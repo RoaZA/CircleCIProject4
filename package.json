@@ -1,5 +1,11 @@
 {
+    "name": "udagram",
+    "version": "1.0.0",
+    "main": "index.ts",
     "scripts": {
+        "install": "npm run frontend:install && npm run api:install",
+        "build":" npm run frontend:build && npm run api:build",
+        "test":"npm run frontend:test && npm run api:test",
         "frontend:install": "cd udagram/udagram-frontend && npm install -f",
         "frontend:start": "cd udagram/udagram-frontend && npm run start",
         "frontend:build": "cd udagram/udagram-frontend && npm run build",
@@ -12,5 +18,8 @@
         "api:start": "cd udagram/udagram-api && npm run dev",
         "api:deploy": "cd udagram/udagram-api && npm run deploy",
         "deploy": "npm run api:deploy && npm run frontend:deploy"
-    }
+    },
+    "keywords":[],
+    "author": "",
+    "license": "ISC"
 }
