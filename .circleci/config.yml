@@ -10,10 +10,7 @@ jobs:
     docker:
       # the base image can run most needed actions with orbs
       - image: "cimg/node:14.17"
-    steps:
-      # install node and checkout code
-      - node/install:
-          node-version: '14.17'         
+    steps:     
       - checkout
       - aws-cli/setup
       - eb/setup
@@ -27,24 +24,10 @@ jobs:
       - run:
           name: Test Front-End and Back-End Projects
           command: npm run test
-
+          - run:
+          name: Set Env Variables for EB
+          command: eb use udagram-api-dev && eb setenv POSTGRES_USERNAME=$POSTGRES_USERNAME POSTGRES_PASSWORD=$POSTGRES_PASSWORD PORT=$PORT POSTGRES_DB=$POSTGRES_DB JWT_SECRET=$JWT_SECRET POSTGRES_HOST=$POSTGRES_HOS
+      - run:
           name: Deploy App
           # TODO: Install, build, deploy in both apps
-          command: |
-            echo "# TODO: Install, build, deploy in both apps"
-            
-workflows:
-  udagram:
-    jobs:
-      - build
-      - hold:
-          filters:
-            branches:
-              only:
-                - master
-          type: approval
-          requires:
-            - build
-      - deploy:
-          requires:
-            - hold
+          command: npm run deploy
