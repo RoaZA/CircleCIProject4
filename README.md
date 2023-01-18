@@ -1,5 +1,5 @@
 # Hosting a Full-Stack Application
-
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/RoaZA/CircleCIProject4/tree/main.svg?style=shield)](https://dl.circleci.com/status-badge/redirect/gh/RoaZA/CircleCIProject4/tree/main)
 ### **You can use you own project completed in previous courses or use the provided Udagram app for completing this final project.**
 
 ---
