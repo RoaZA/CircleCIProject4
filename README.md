@@ -82,4 +82,4 @@ The e2e tests are using Protractor and Jasmine.
 ## ------------------------------
 ### CIrcleCI
 * 1- install dependancies 2- build the project -> get .zip file 3- test and lint 4- deploy .zip file in BE and FE
-123------
+* All the secrets found in the application are configured inside CircleCi project seting 

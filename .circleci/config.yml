@@ -21,6 +21,7 @@ jobs:
       - run:
           name: Build Front-End and Back-End Projects
           command: npm run build
+      # will only show log message
       - run:
           name: Test Front-End and Back-End Projects
           command: npm run test
