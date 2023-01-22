@@ -1,1 +1,1 @@
-eb setenv POSTGRES_USERNAME=postgres POSTGRES_PASSWORD=a7jjxVqb7sjvHpBHFlNf PORT=5432 POSTGRES_DB=udagramdb JWT_SECRET=jwtkey POSTGRES_HOST=udagramserver.cdtxtdb1lwy0.us-east-1.rds.amazonaws.com URL=http://udagram-api-dev.eba-kkccfayz.us-east-1.elasticbeanstalk.com/
+eb setenv AWS_PROFILE=default AWS_BUCKET=arn:aws:s3:::rise-udagram POSTGRES_USERNAME=postgres POSTGRES_PASSWORD=a7jjxVqb7sjvHpBHFlNf PORT=5432 POSTGRES_DB=udagramdb JWT_SECRET=jwtkey POSTGRES_HOST=udagramserver.cdtxtdb1lwy0.us-east-1.rds.amazonaws.com
