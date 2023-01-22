@@ -27,7 +27,7 @@ jobs:
           command: npm run test
       - run:
           name: Set Env Variables for EB
-          command: cd udagram/udagram-api/.elasticbeanstalk/config.yml && eb use udagram-api-dev && eb setenv POSTGRES_USERNAME=$POSTGRES_USERNAME POSTGRES_PASSWORD=$POSTGRES_PASSWORD PORT=$PORT POSTGRES_DB=$POSTGRES_DB JWT_SECRET=$JWT_SECRET POSTGRES_HOST=$POSTGRES_HOS
+          command: cd .. && cd udagram/udagram-api/.elasticbeanstalk/config.yml && eb use udagram-api-dev && eb setenv POSTGRES_USERNAME=$POSTGRES_USERNAME POSTGRES_PASSWORD=$POSTGRES_PASSWORD PORT=$PORT POSTGRES_DB=$POSTGRES_DB JWT_SECRET=$JWT_SECRET POSTGRES_HOST=$POSTGRES_HOS
       - run:
           name: Deploy App
           # Install, build, deploy in both apps
