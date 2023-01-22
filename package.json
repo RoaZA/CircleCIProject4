@@ -7,7 +7,7 @@
         "build":" npm run frontend:build && npm run api:build",
         "test":"npm run frontend:test && npm run api:test",
         "deploy": "npm run api:deploy && npm run frontend:deploy",
-        "setEnvEB" :"cd udagram/udagram-api && eb list && eb use udagram-api-dev && eb setenv POSTGRES_USERNAME=$POSTGRES_USERNAME POSTGRES_PASSWORD=$POSTGRES_PASSWORD PORT=$PORT POSTGRES_DB=$POSTGRES_DB JWT_SECRET=$JWT_SECRET POSTGRES_HOST=$POSTGRES_HOS",
+        "setEnvEB" :"cd udagram/udagram-api && eb list && eb use udagram-api-dev && eb setenv AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY AWS_DEFAULT_REGION=$AWS_DEFAULT_REGION POSTGRES_USERNAME=$POSTGRES_USERNAME POSTGRES_PASSWORD=$POSTGRES_PASSWORD PORT=$PORT POSTGRES_DB=$POSTGRES_DB JWT_SECRET=$JWT_SECRET POSTGRES_HOST=$POSTGRES_HOS URL=$URL",
         "frontend:install": "cd udagram/udagram-frontend && npm install",
         "frontend:start": "cd udagram/udagram-frontend && npm run start",
         "frontend:build": "cd udagram/udagram-frontend && npm run build",
