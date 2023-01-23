@@ -32,11 +32,11 @@ jobs:
           name: Deploy App
           # Install, build, deploy in both apps
           command: npm run deploy
-          
+
 workflows:
   main_workflow:
     jobs:
-      - build_test_deploy
+      - build_test_deploy:
         filters:
           branches:
             only: 
