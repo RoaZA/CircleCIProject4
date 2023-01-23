@@ -10,7 +10,9 @@
 ####  * AWS RDS
 
 * Crete remote DB for the deployment and connect it with **the API** then create security groups and edit the inbound rules for PostgreSQL.
-
+![](screenshots\RDS1.png)
+![](screenshots\RDS2.png)
+![](screenshots\RDS3.png)
 ####  * AWS EB
 
 * Initialize **EB** environment for the Backend project application (**API**) using `eb init --platform node.js-14 --region us-east-1` then create the environment remotely using `eb create --sample udagram-api-dev` then use this environment  with `eb use udagram-api-dev`.
