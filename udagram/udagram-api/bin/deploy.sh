@@ -1,1 +1,1 @@
-eb setenv AWS_PROFILE=default AWS_BUCKET=arn:aws:s3:::rise-udagram POSTGRES_USERNAME=roaAdmin POSTGRES_PASSWORD=RDB_4321 PORT=5432 POSTGRES_DB=postgres JWT_SECRET=jwtkey POSTGRES_HOST=db-udagram.cdtxtdb1lwy0.us-east-1.rds.amazonaws.com
+eb setenv AWS_DEFAULT_REGION=us-east-1 AWS_PROFILE=default AWS_BUCKET=arn:aws:s3:::rise-udagram POSTGRES_USERNAME=roaAdmin POSTGRES_PASSWORD=RDB_4321 PORT=8080 POSTGRES_DB=postgres JWT_SECRET=jwtkey POSTGRES_HOST=db-udagram.cdtxtdb1lwy0.us-east-1.rds.amazonaws.com

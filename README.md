@@ -75,7 +75,7 @@ The e2e tests are using Protractor and Jasmine.
 ### RDS
 * Crete remote DB for the deployment and connect it with BE then create security groups and edit the inbound roules for PostgreSQL
 ### EB
-* initilize  EB enviroment for the BackEnd project , aplication using `eb init --platform node.js-14 --region us-east-1` then create the enviroment remotly using `eb create --sample udagram-api-dev` then use this enviroment with `eb use udagram-api-dev`. set enviroment varibla using `eb setenv` and then the URL for Backend will display `http://udagram-api-dev.eba-fmdi6xaa.us-east-1.elasticbeanstalk.com/`
+* initilize  EB enviroment for the BackEnd project , aplication using `eb init --platform node.js-14 --region us-east-1` then create the enviroment remotly using `eb create --sample udagram-api-dev` then use this enviroment with `eb use udagram-api-dev`. set enviroment varibla using `eb setenv` and add it in the eb. and then the URL for Backend will display `http://udagram-api-dev.eba-fmdi6xaa.us-east-1.elasticbeanstalk.com/`
 ### S3
 * Create S3 bucket to deploy frontend with
 `aws s3api create-bucket --bucket rise-udagram --region us-east-1` build FE then deploy build to s3 bucket with `aws s3 cp --recursive --acl public-read ./www s3://rise-udagram`
