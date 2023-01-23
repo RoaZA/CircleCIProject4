@@ -10,7 +10,7 @@
 ####  * AWS RDS
 
 * Crete remote DB for the deployment and connect it with **the API** then create security groups and edit the inbound rules for PostgreSQL.
-![](screenshots\RDS1.png)
+![](./screenshots/RDS1.png)
 ![](screenshots\RDS2.png)
 ![](screenshots\RDS3.png)
 ####  * AWS EB
